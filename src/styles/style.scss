@@ -1,0 +1,32 @@
+@import '_formulario.scss';
+@import '_cards.scss';
+body{
+    background-image: url('../images/portal2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bodyerror{
+    background-image: url('../images/404Terry.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.aqui{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;   
+    .card{
+        box-shadow: 5px 5px 5px -2px rgba(130,130,130,1);
+        flex: 0,0, calc(33.3%-1rem);
+        margin-bottom: 20px;
+        border:1px solid #b5b5b5;
+        border-radius: 30px;
+        transition: ease-in-out 140ms;
+        img{
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        &:hover{
+            transform: translate(0,-10px);
+        }
+    }
+}
